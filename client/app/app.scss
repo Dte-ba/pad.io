@@ -1,6 +1,9 @@
 $fa-font-path: '/assets/fonts/font-awesome/';
 @import '~font-awesome/scss/font-awesome';
 
+$pad-font-path: '/assets/fonts/';
+$pad-img-path: '/assets/images';
+
 // @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900|Roboto:300,500,700,900);
 
 /**
@@ -14,15 +17,35 @@ $fa-font-path: '/assets/fonts/font-awesome/';
   padding: 0.2em 0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+@import '../styles/mixin.scss';
+@import '../styles/variables.scss';
+@import '../styles/fonts.scss';
+
+html,
+body {
+  min-height: 550px;
+}
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    min-height: 132+48+$menu-weight;
   }
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    padding-top: 48px;
+  }
+}
+
+body {
+  background: $pad-cream-color url('#{$pad-img-path}/texture_triangles30.png') repeat;
 }
 
 // Component styles are injected through gulp
 /* inject:scss */
 @import 'main/main';
 @import '../components/footer/footer';
+@import '../components/menu-roulette/menu-roulette';
 /* endinject */

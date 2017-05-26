@@ -16,6 +16,7 @@ import {
 
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
+import menuRoulette from '../components/menu-roulette/menu-roulette.component';
 import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
@@ -33,6 +34,7 @@ angular.module('padApp', [
   ngMaterial,
   navbar,
   footer,
+  menuRoulette,
   main,
   'angular-loading-bar',
   constants,
