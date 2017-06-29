@@ -14,10 +14,15 @@ import {
   routeConfig
 } from './app.config';
 
+import dcAngular from '../lib/dc.angular.js';
+
 import navbar from '../components/navbar/navbar.component';
+import searchbar from '../components/searchbar/searchbar.component';
+import sidenav from '../components/sidenav/sidenav.component';
 import footer from '../components/footer/footer.component';
 import menuRoulette from '../components/menu-roulette/menu-roulette.component';
 import main from './main/main.component';
+import design from './design/design.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 
@@ -32,10 +37,14 @@ angular.module('padApp', [
   ngSanitize,
   uiRouter,
   ngMaterial,
+  dcAngular,
   navbar,
+  searchbar,
+  sidenav,
   footer,
   menuRoulette,
   main,
+  design,
   'angular-loading-bar',
   constants,
   util

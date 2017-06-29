@@ -6,6 +6,14 @@ import angular from 'angular';
 export class NavbarComponent {
   menu = [];
   isCollapsed = true;
+  /*@ngInject*/
+  constructor($rootScope){
+    this.$rootScope = $rootScope;
+  }
+  /*@ngInject*/
+  toggle($event){
+    this.$rootScope.toggleSidenav();
+  }
 }
 
 export default angular.module('directives.navbar', [])

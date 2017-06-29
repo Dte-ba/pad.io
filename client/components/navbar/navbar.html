@@ -1,7 +1,22 @@
 <md-toolbar layout="row" class="md-toolbar-tools">
-  <!--
-  <a ui-sref="main" class="logo-nabvar"><img src="/assets/images/log_pad_large.png"></a>
   
+  
+  <div class="text-left">
+    <a ui-sref="main" class="logo-nabvar"><img src="/assets/images/log_pad_large.png"></a>  
+  </div>
+  <div flex class="text-right">
+    <md-button class="md-icon-button" aria-label="menu">
+      <md-icon md-font-icon="fa-search" class="fa"></md-icon>
+    </md-button>
+    <md-button class="md-icon-button" aria-label="menu">
+      <md-icon md-font-icon="fa-thumb-tack" class="fa"></md-icon>
+    </md-button>
+    <md-button class="md-raised md-icon-button" aria-label="menu" class="" ng-click="vm.toggle($event)">
+      <md-icon md-font-icon="fa-bars" class="fa"></md-icon>
+    </md-button>
+  </div>
+  
+  <!--
   <span flex></span>
   
   

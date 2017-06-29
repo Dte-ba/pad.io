@@ -1,3 +1,16 @@
-main {
-  //min-height: 132+48+$menu-weight;
+.link-areas {
+  .item-area {
+    height: $item-area-normal;
+    width: $item-area-normal;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('#{$pad-img-path}/assets-areas.png');
+
+    @each $area, $key in $areas {
+      &[data-area="#{$area}"] {
+        $p: map-get($key, index) * 100;
+        background-position: -#{$p}px 0px;
+      }
+    }
+  }
 }

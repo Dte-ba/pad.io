@@ -1,0 +1,18 @@
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="main-sidenav">
+  <md-toolbar class="md-theme-right">
+    <h1 class="md-toolbar-tools">Le PAD</h1>
+  </md-toolbar>
+   <md-content>
+     <md-list>
+      <md-list-item ng-repeat="item in nav.items track by $index" >
+        <md-button ng-click="nav.itemClicked(item)"">
+          
+          <md-icon md-font-icon="{{item.icon}}" class="fa"></md-icon> 
+          <md-icon ng-show="nav.$state.includes(item.include)"
+                   md-font-icon="fa-chevron-right" class="fa"></md-icon> {{item.caption}}
+
+        </md-button>
+      </md-list-item>
+    </md-list>
+   </md-content>
+</md-sidenav>

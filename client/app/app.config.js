@@ -45,7 +45,43 @@ export function routeConfig($urlRouterProvider, $locationProvider, $mdThemingPro
     'contrastDarkColors': '50 100 200 300 400 500 A100 A200 A400'
   });
 
+  $mdThemingProvider.definePalette('ba-dark-gray', {
+    '50': 'e8e8e8',
+    '100': 'c5c5c6',
+    '200': '9e9fa0',
+    '300': '777879',
+    '400': '5a5b5d',
+    '500': '3d3e40',
+    '600': '37383a',
+    '700': '2f3032',
+    '800': '27282a',
+    '900': '1a1b1c',
+    'A100': '70b2f5',
+    'A200': '4199f1',
+    'A400': '007fff',
+    'A700': '0073e6',
+    'contrastDefaultColor': 'light',
+    'contrastDarkColors': [
+      '50',
+      '100',
+      '200',
+      'A100',
+      'A200'
+    ],
+    'contrastLightColors': [
+      '300',
+      '400',
+      '500',
+      '600',
+      '700',
+      '800',
+      '900',
+      'A400',
+      'A700'
+    ]
+  });
+
   $mdThemingProvider.theme('default')
-  .primaryPalette('bagreen')
+  .primaryPalette('ba-dark-gray')
   .accentPalette('blue');
 }

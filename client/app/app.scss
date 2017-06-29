@@ -20,6 +20,7 @@ $pad-img-path: '/assets/images';
 @import '../styles/mixin.scss';
 @import '../styles/variables.scss';
 @import '../styles/fonts.scss';
+@import '../styles/common.scss';
 
 html,
 body {
@@ -45,7 +46,11 @@ body {
 
 // Component styles are injected through gulp
 /* inject:scss */
+@import 'design/design';
 @import 'main/main';
 @import '../components/footer/footer';
 @import '../components/menu-roulette/menu-roulette';
+@import '../components/navbar/navbar';
+@import '../components/searchbar/searchbar';
+@import '../components/sidenav/sidenav';
 /* endinject */
