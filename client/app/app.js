@@ -21,6 +21,7 @@ import searchbar from '../components/searchbar/searchbar.component';
 import sidenav from '../components/sidenav/sidenav.component';
 import footer from '../components/footer/footer.component';
 import menuRoulette from '../components/menu-roulette/menu-roulette.component';
+import testComponent from './test/test.component';
 import main from './main/main.component';
 import design from './design/design.component';
 import constants from './app.constants';
@@ -45,6 +46,7 @@ angular.module('padApp', [
   menuRoulette,
   main,
   design,
+  testComponent,
   'angular-loading-bar',
   constants,
   util

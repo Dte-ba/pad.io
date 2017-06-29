@@ -19,35 +19,15 @@ $pad-img-path: '/assets/images';
 
 @import '../styles/mixin.scss';
 @import '../styles/variables.scss';
+@import '../styles/layout.scss';
 @import '../styles/fonts.scss';
 @import '../styles/common.scss';
-
-html,
-body {
-  min-height: 550px;
-}
-
-@media screen and (max-width: 600px) {
-  html,
-  body {
-    min-height: 132+48+$menu-weight;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #content {
-    padding-top: 48px;
-  }
-}
-
-body {
-  background: $pad-cream-color url('#{$pad-img-path}/texture_triangles30.png') repeat;
-}
-
+@import '../styles/dte-material.scss';
 // Component styles are injected through gulp
 /* inject:scss */
 @import 'design/design';
 @import 'main/main';
+@import 'test/test';
 @import '../components/footer/footer';
 @import '../components/menu-roulette/menu-roulette';
 @import '../components/navbar/navbar';

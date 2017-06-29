@@ -7,8 +7,12 @@ $black-color-darken: #232425;
 $light-cover: 70%;
 $bg-deph: hsla(253, 123, 179, 0.3);
 
-$footer-height: 45px;
+$min-content-hegiht: 500px;
+
+$footer-height: 49px;
 $footer-height-middle: $footer-height/2;
+$footer-padding: 15px;
+$footer-padding-complete: $footer-height + $footer-padding; 
 
 $menu-weight: 340px;
 $menu-weight-middle: $menu-weight/2;

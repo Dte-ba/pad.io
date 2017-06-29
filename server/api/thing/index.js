@@ -5,6 +5,6 @@ var controller = require('./thing.controller');
 
 var router = express.Router();
 
-router.get('/', controller.index);
+router.get('/:page/:take', controller.index);
 
 module.exports = router;

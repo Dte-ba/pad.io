@@ -3,16 +3,35 @@ html,
 body {
   margin:0;
   padding:0;
-  height: 100%;
 }
 
 body {
   background: $pad-cream-color url('#{$pad-img-path}/texture_triangles30.png') repeat;
 }
 
+// sticky footer
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+.footer, .push {
+    height: 4em;
+} 
+
 #wrapper {
   min-height:100%;
   position:relative;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -($footer-height + 15px);
 }
 
 #content {
