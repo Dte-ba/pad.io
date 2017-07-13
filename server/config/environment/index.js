@@ -22,6 +22,8 @@ var all = {
   // Browser-sync port
   browserSyncPort: process.env.BROWSER_SYNC_PORT || 3000,
 
+  repository: process.env.REPOSITORY_PATH,
+
   // Server port
   port: process.env.PORT || 9000,
 
